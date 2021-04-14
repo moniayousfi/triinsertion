@@ -1,0 +1,23 @@
+Algorithm TriInsertion
+
+Var
+
+arr = ARRAY_OF_INTEGER;
+i,j,key:integer;
+
+BEGIN
+
+FOR i FROM 0 TO length arr step1 do 
+key =arr[i];
+while(j>=0 and arr[j]>key)
+arr[j+1]=arr[j];
+j=j-1;
+
+END_WHILE
+
+arr[j+1]=key;
+ 
+END_FOR
+
+ END
+
